@@ -1,0 +1,34 @@
+{
+  "login": {
+    "email": "//input[@type='email' or @name='email' or @id='email']",
+    "password": "//input[@type='password' or @name='password' or @id='password']",
+    "submit": "//button[contains(.,'Sign in') or contains(.,'Log in') or @type='submit']"
+  },
+  "nav": {
+    "calendar_tab": "//a[contains(.,'Calendar') or contains(.,'Hearing')]",
+    "cases_tab": "//a[contains(.,'Case') and not(contains(.,'Calendar'))]"
+  },
+  "calendar": {
+    "month_next": "//button[contains(@aria-label,'Next') or contains(.,'Next')]",
+    "day_cells": "//div[contains(@class,'calendar')]//div[contains(@class,'day')]",
+    "day_number_in_cell": ".//span[contains(@class,'number') or self::span]",
+    "hearing_dot": ".//div[contains(@class,'dot') or contains(@class,'bullet') or self::span[contains(@class,'dot')]]",
+    "overlay_row": "//div[contains(@class,'overlay') or contains(@class,'row')][1]"
+  },
+  "hearing_popup": {
+    "dialog": "//div[contains(@role,'dialog') or contains(@class,'modal')]",
+    "close": ".//button[contains(.,'Close') or contains(.,'OK') or @aria-label='Close']"
+  },
+  "case_search": {
+    "anumber_input": "//input[@type='text' and (contains(@placeholder,'A') or contains(@aria-label,'A') or contains(@name,'A'))]",
+    "search_btn": "//button[contains(.,'Search')]",
+    "open_case": "//table//tr[1]//a"
+  },
+  "case_docs": {
+    "documents_tab": "//a[contains(.,'Documents') or contains(.,'eROP')]",
+    "table_rows": "//table//tr[td]",
+    "col_label": ".//td[1]",
+    "col_date": ".//td[2]",
+    "download_btn": ".//a[contains(.,'Download') or @href[contains(.,'download')] or .//i[contains(@class,'download')]]"
+  }
+}
